@@ -1,0 +1,10 @@
+<?php
+    if(!empty($_SESSION['rol_id'])){
+        if($_SESSION['rol_id'] == '1'){
+            echo '<h1 class="container">ADIM CONECTADO</h1>';
+        }elseif($_SESSION['rol_id'] == '2'){
+            echo '<h1 class="container">USER CONECTADO</h1>';
+        }
+    }
+?>
+<h1 class="container">Bienvenido</h1>

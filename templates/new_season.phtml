@@ -1,0 +1,19 @@
+<form class="container form-control" action="add_serie" method="POST">
+    <div class="mb-3">
+        <label for="name_serie" class="form-label">Titulo de la Temporada:</label>
+        <input type="text" class="form-control" name="name_serie" placeholder="Nombre del Proyecto">
+    </div>
+    <div class="mb-3">
+        <label for="season_number" class="form-label">Temporada número:</label>
+        <input type="number" class="form-control" name="season_number" placeholder="Ingrese el número de la temporada">
+    </div>
+    <?php
+        if(!empty($error)){
+            echo"<div class='alert alert-danger alert-dismissible fade show' role='alert'>
+            <strong>$error</strong>
+            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+          </div>";
+        }
+    ?>
+    <button class="btn btn-primary" type="submit">Agregar</button>
+</form>

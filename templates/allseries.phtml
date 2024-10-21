@@ -1,0 +1,17 @@
+
+<table class="container table table-striped table-hover">
+    <tr>
+        <th>Serie</th>
+        <th>descripcion</th>
+        <th>Ver Serie</th>
+        <?php
+        if(!empty($_SESSION['rol_id'])){
+                if($_SESSION['rol_id']==1){
+            ?>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+            <?php
+            }
+        }
+        ?>
+    </tr>
